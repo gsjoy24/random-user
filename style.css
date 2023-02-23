@@ -6,12 +6,14 @@
 	transition: 300ms linear;
 }
 body {
-	background-color: #282727;
+	background-color: #2c2d2f;
 	color: #fff;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0;
+	overflow-x: hidden;
 }
 #user-container {
 	width: 320px;
@@ -36,7 +38,12 @@ body {
 	border-radius: 10px;
 	cursor: pointer;
 }
-
+.show:hover {
+	background-color: #044ec6;
+}
+.show:active {
+	transform: scale(0.7);
+}
 /* ! user */
 .user {
 	padding: 20px;
@@ -50,4 +57,6 @@ body {
 	border-radius: 50%;
 	width: 120px;
 	margin-bottom: 10px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 10px;
 }
