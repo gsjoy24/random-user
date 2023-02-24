@@ -12,7 +12,7 @@ const showUserDetails = (user) => {
 	userContainer.innerHTML = `
 					<div class="user">
 					<img id="person" src=${userObj.picture.large} alt="" />
-					<h2>${userObj.name.title + ' ' + userObj.name.first + ' ' + userObj.name.last}</h2>
+					<h2>${userObj.name.title + '. ' + userObj.name.first + ' ' + userObj.name.last}</h2>
 					<p>${userObj.email}</p>
 					<p>Gender: ${userObj.gender}</p>
 					<p>Phone: ${userObj.phone}</p>
