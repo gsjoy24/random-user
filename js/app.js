@@ -6,11 +6,12 @@ const loadUser = () => {
 
 const showUserDetails = (user) => {
 	const userContainer = document.getElementById('user-container');
+
 	const userObj = user.results[0];
 
 	userContainer.innerHTML = `
 					<div class="user">
-					<img src=${userObj.picture.large} alt="" />
+					<img id="person" src=${userObj.picture.large} alt="" />
 					<h2>${userObj.name.title + ' ' + userObj.name.first + ' ' + userObj.name.last}</h2>
 					<p>${userObj.email}</p>
 					<p>Gender: ${userObj.gender}</p>
